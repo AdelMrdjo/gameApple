@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game:Apple</title>
+	<meta charset="utf-8">
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<p id="test"></p>
+	<p id="hrana_pos"></p>
+	<div class="score">
+		<div id="level">Level</div>
+		<div id="level_value">1</div>
+		<div id="time">10</div>
+		<div id="time_value">s</div>
+		<div id="score_value">0/5</div>
+		<div id="score">Score</div>
+	</div>
+	<div class="ground">
+		<script src="draw_playground.js"></script>
+	</div>
+	<meter id="meter"value="0"></meter>
+	<div id="gameOver">
+		<img src="gameover.gif">
+		<h1 id="gameover_score">Total score:</h1>
+		<button onclick="btn_again()"title="Again?"><i class="fas fa-redo-alt"></i></button>
+		<button onclick="btn_close()"title="Close"><i class="fas fa-times"></i></button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish&display=swap');
+body{
+	 background: linear-gradient(to right, #36d1dc, #5b86e5);
+	 font-family: 'Stylish', sans-serif;
+}
+div.ground{
+	width: 395px;
+	height: 420px;
+	position: absolute;
+	left:50%;
+	top:100px;
+	transform: translate(-50%);
+	padding:10px;
+}
+div.polje{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 2px;
+	margin-left:3px;
+	box-shadow:0 2px 5px 2px rgba(0,0,0,.5);
+}
+span.player{
+	position: relative;
+	color:#262626;
+	font-size:26px;
+	left:8px;
+	top:8px;
+}
+div.ground span.player i{
+	border:none;
+	box-shadow:0 5px 15px 5px rgba(0,0,0,.7);
+	border-radius:50%;
+}
+div#gameOver{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 350px;
+	opacity: 0;
+	z-index: 100;
+	box-shadow:0 5px 15px 5px rgba(0,0,0,.7);
+}
+div#gameOver img{
+	width: 90%;
+	height: 60%;
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
+}
+div#gameOver h1{
+	position: absolute;
+	top:160px;
+	left:50px;
+	font-size: 24px;
+}
+div#gameOver button{
+	width: 80px;
+	height: 50px;
+	margin-top:20px;
+	margin-left:60px;
+	background:transparent;
+	border:none;
+	box-shadow:0 5px 15px 5px rgba(0,0,0,.7);
+}
+div#gameOver button:hover{
+	cursor: pointer;
+	border:1px solid #f00;
+}
+div#gameOver i{
+	font-size: 20px;
+	color:#f00;
+}
+span.hrana{
+	color:#f00;
+	position: relative;
+	font-size:26px;
+	left:8px;
+	top:8px;
+}
+/*--------------------------------------------------------SCORE-----------------------------------------------*/
+div.score{
+	background:#d3d3d3;
+	position: absolute;
+	top:50px;
+	width: 385px;
+	font-size:30px;
+	left:50%;
+	transform: translateX(-50%);
+	box-shadow:0 2px 5px 2px rgba(0,0,0,.5);
+	background:transparent;
+}
+div.score #level, div.score #level_value, div.score #time, div.score #time_value{
+	float:left;
+	padding-left:10px;
+}
+div.score #score_value,div.score #score{
+	float:right;
+	padding-right: 10px;
+}
+div.score #level_value, div.score #score_value{
+	color:#f00;
+	font-weight: bold;
+}
+div.score #time{
+	padding-left:50px;
+	color:#f00;
+	font-weight: bold;
+}
+div.score #time_value{
+	padding-left:5px;
+	font-weight: bold;
+}
+/*------------------------------------------------------PROGRESS BAR (METER)------------------------*/
+meter#meter{
+	width: 385px;
+	position: absolute;
+	left:50%;
+	top:540px;
+	transform: translateX(-50%);
+	transition: all linear 3s;
+	background:#d3d3d3;
+	box-shadow:0 2px 5px 2px rgba(0,0,0,.5);
+}
+meter::-webkit-meter-optimum-value {
+  	background-image:linear-gradient(to right,#000,#f00);
+}
+meter::-webkit-meter-optimum-value {
+  -webkit-transition: width .5s;
+}
